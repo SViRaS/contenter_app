@@ -1,4 +1,5 @@
 import 'package:contenter_app/screens/auth_screen.dart';
+import 'package:contenter_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: AuthScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

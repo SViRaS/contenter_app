@@ -1,3 +1,4 @@
+import 'package:contenter_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -131,7 +132,9 @@ class AuthScreen extends StatelessWidget {
     ),
                   backgroundColor: const Color.fromRGBO(60, 4, 228, 1),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomeScreen()));
+                },
                 child: const Text('Login',
                 style: TextStyle(
                   fontSize: 14,
