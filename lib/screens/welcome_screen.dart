@@ -1,4 +1,5 @@
 import 'package:contenter_app/constants/lefthand.dart';
+import 'package:contenter_app/screens/club_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -16,14 +17,14 @@ class WelcomeScreen extends StatelessWidget {
             height: 78,
           ),
           const Padding(
-            padding: EdgeInsets.only(right: 70.0),
+            padding: EdgeInsets.only(right: 75.0),
             child: Center(
                 child: Text(
               'Welcome to',
               style: TextStyle(
                   fontSize: 45,
-                  fontWeight: FontWeight.w100,
-                  fontFamily: 'SpaceGrotesk'),
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'SpaceGrotesk-Light'),
             )),
           ),
           const Text(
@@ -43,7 +44,7 @@ class WelcomeScreen extends StatelessWidget {
               style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.w400,
-                  fontFamily: 'SpaceGrotesk'),
+                  fontFamily: 'SpaceGrotesk-Light'),
             ),
           ),
           Stack(children: [
@@ -92,7 +93,9 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 60,),
+                SizedBox(
+                  height: 60,
+                ),
                 SizedBox(
                   width: 335,
                   height: 52,
@@ -103,12 +106,16 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       backgroundColor: const Color.fromRGBO(60, 4, 228, 1),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ClubScreen()));
+                    },
                     child: const Text(
-                      'Login',
+                      'Continue',
                       style: TextStyle(
                         fontSize: 14,
-                      
                         fontWeight: FontWeight.w600,
                         color: Color.fromRGBO(239, 239, 239, 1),
                         fontFamily: 'OpenSans',

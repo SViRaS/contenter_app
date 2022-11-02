@@ -29,11 +29,18 @@ class AuthScreen extends StatelessWidget {
             ),
             const Text(
               'Login to',
-              style: TextStyle(fontSize: 31, fontWeight: FontWeight.w400, ),
+              style: TextStyle(
+                fontSize: 31,
+                fontWeight: FontWeight.w400,
+              ),
             ),
             const Text(
               'Contenter Club',
-              style: TextStyle(fontSize: 31, fontWeight: FontWeight.w700,  fontFamily: 'SpaceGrotesk',),
+              style: TextStyle(
+                fontSize: 31,
+                fontWeight: FontWeight.w700,
+                fontFamily: 'SpaceGrotesk',
+              ),
             ),
             const SizedBox(
               height: 42,
@@ -42,7 +49,12 @@ class AuthScreen extends StatelessWidget {
               padding: EdgeInsets.only(right: 295.0),
               child: Text(
                 'E-mail',
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'Manrope', color: Color(0xFF000000),),
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  fontFamily: 'Manrope',
+                  color: Color(0xFF000000),
+                ),
               ),
             ),
             const SizedBox(
@@ -54,16 +66,14 @@ class AuthScreen extends StatelessWidget {
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(8)),
-                      
                     ),
-                    hintText: 'E-mail'
-                    ),
-                    style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      color: Color.fromRGBO(169, 172, 176, 1),
-                    ),
+                    hintText: 'E-mail'),
+                style: TextStyle(
+                  fontFamily: 'Manrope',
+                  fontSize: 16,
+                  fontWeight: FontWeight.w400,
+                  color: Color.fromRGBO(169, 172, 176, 1),
+                ),
               ),
             ),
             const SizedBox(
@@ -73,7 +83,12 @@ class AuthScreen extends StatelessWidget {
               padding: EdgeInsets.only(right: 276.0),
               child: Text(
                 'Password',
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xFF000000), fontFamily: 'Manrope',),
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF000000),
+                  fontFamily: 'Manrope',
+                ),
               ),
             ),
             const SizedBox(
@@ -84,16 +99,16 @@ class AuthScreen extends StatelessWidget {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
-                    ),
-                    hintText: 'Pass',),
-                    style: TextStyle(
-                      color: Color.fromRGBO(28, 27, 27, 1),
-                      fontFamily: 'Manrope',
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600
-                      ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                  ),
+                  hintText: 'Pass',
+                ),
+                style: TextStyle(
+                    color: Color.fromRGBO(28, 27, 27, 1),
+                    fontFamily: 'Manrope',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600),
               ),
             ),
             const SizedBox(
@@ -104,8 +119,8 @@ class AuthScreen extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(left: 113.0),
                   child: Icon(
-                      FontAwesomeIcons.circleQuestion,
-                    ),
+                    FontAwesomeIcons.circleQuestion,
+                  ),
                 ),
                 TextButton(
                     onPressed: () {},
@@ -128,20 +143,25 @@ class AuthScreen extends StatelessWidget {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8),
-    ),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   backgroundColor: const Color.fromRGBO(60, 4, 228, 1),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomeScreen()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const WelcomeScreen()));
                 },
-                child: const Text('Login',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Color.fromRGBO(239, 239, 239, 1),
-                  fontFamily: 'OpenSans',
-                ),),
+                child: const Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color.fromRGBO(239, 239, 239, 1),
+                    fontFamily: 'OpenSans',
+                  ),
+                ),
               ),
             ),
             const SizedBox(
@@ -151,10 +171,11 @@ class AuthScreen extends StatelessWidget {
                 onPressed: () {},
                 child: const Text(
                   'Sign Up',
-                  style: TextStyle(color: Color.fromRGBO(60, 4, 228, 1),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  fontFamily: 'OpenSans'),
+                  style: TextStyle(
+                      color: Color.fromRGBO(60, 4, 228, 1),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'OpenSans'),
                 ))
           ],
         ));

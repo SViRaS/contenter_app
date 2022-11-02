@@ -82,6 +82,9 @@ flutter:
       fonts:
         - asset: assets/fonts/SpaceGrotesk.ttf
 
+    - family: SpaceGrotesk-Light
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk-Light.ttf    
 
     - family: Manrope
       fonts:
@@ -90,6 +93,24 @@ flutter:
     - family: OpenSans
       fonts:
         - asset: assets/fonts/OpenSans.ttf
+
+    - family: OpenSans-Medium
+      fonts:
+        - asset: assets/fonts/OpenSans-Medium.ttf
+
+    - family: OpenSans-Light
+      fonts:
+        - asset: assets/fonts/OpenSans-Light.ttf
+    
+    - family: JetBrainsMono-Bold
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+    
+    - family: JetBrainsMono-Light
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Light.ttf
+    
+    
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
