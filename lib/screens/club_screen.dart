@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:contenter_app/screens/club2_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -165,32 +166,40 @@ class ClubScreen extends StatelessWidget {
             const SizedBox(
               height: 25,
             ),
-            SizedBox(
-              width: 335,
-              height: 29,
-              child: Row(
-                children: const [
-                  Text(
-                    'Marketplace',
-                    style: TextStyle(
-                        fontSize: 23,
-                        fontFamily: 'SpaceGrotesk',
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xFF000000)),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
+            Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 35.0),
+                child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Marketplace',
+                      style: TextStyle(
+                          fontSize: 23,
+                          fontFamily: 'SpaceGrotesk',
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFF000000)),
+                    )),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              TextButton(
+                  onPressed: () {
+                     Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ClubScreenMyProposals()));
+                  },
+                  child: Text(
                     'My proposals',
                     style: TextStyle(
                         fontSize: 23,
                         fontFamily: 'SpaceGrotesk-Light',
                         fontWeight: FontWeight.w400,
                         color: Color(0xFF000000)),
-                  ),
-                ],
-              ),
+                  )),
+            ],
             ),
             const SizedBox(
               height: 20,

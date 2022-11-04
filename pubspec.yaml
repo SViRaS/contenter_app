@@ -84,7 +84,11 @@ flutter:
 
     - family: SpaceGrotesk-Light
       fonts:
-        - asset: assets/fonts/SpaceGrotesk-Light.ttf    
+        - asset: assets/fonts/SpaceGrotesk-Light.ttf 
+
+    - family: SpaceGrotesk-Medium
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk-Medium.ttf      
 
     - family: Manrope
       fonts:
