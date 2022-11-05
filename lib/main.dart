@@ -1,6 +1,7 @@
 import 'package:contenter_app/screens/auth_screen.dart';
 import 'package:contenter_app/screens/club2_screen.dart';
 import 'package:contenter_app/screens/club_screen.dart';
+import 'package:contenter_app/screens/profile_screen.dart';
 import 'package:contenter_app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
