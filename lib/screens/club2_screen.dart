@@ -45,9 +45,9 @@ class ClubScreenMyProposals extends StatelessWidget {
                   Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                        padding: const EdgeInsets.only(top: 20.0, left: 20.0),
                         child: CircleAvatar(
-                          backgroundImage: NetworkImage(
+                          backgroundImage: const NetworkImage(
                               'https://s3-alpha-sig.figma.com/img/738e/6e77/a92971e6075b85d18be0de93205d90cb?Expires=1668384000&Signature=eouSFgda1zED50ptAd7f8Qql1Elx4kZYVBeJhtP8JoYEdAkYV7zJ9IdjpKZLdqNUs7kvjvxFc8rnQCMkno4s0gVatpRK8LGxe~gvH8-CP9XPFHUHGOo1ZKUJ3px6MJ3snfLvLyG9EpKcjRiDXVgHrtnermqhgmqxhffCoj23Y69~vbm8vY8f2mrvrs7t-~tSL8K-sq~QGcSfJDr2UiUHNcLnh-K3V3BS5wb-LzZ5KdB8E6liAgbao-f85C3Nh5DRflFVb-DuZMSqnIhvzSY6DycapVi3jRI9QcD98Y22ysNxmedXRqE2zUjFejE4tfzggiKR3TSaQBeMLFVwG5LPJw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'),
                         child: RawMaterialButton(onPressed: () {
                           Navigator.push(
@@ -57,7 +57,7 @@ class ClubScreenMyProposals extends StatelessWidget {
                         }),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(left: 10, top: 20.0),
                         child: Text(
                           'Cameron \nWilliamson',
@@ -68,10 +68,10 @@ class ClubScreenMyProposals extends StatelessWidget {
                               color: Color(0xFF000000)),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 135,
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(top: 20.0),
                         child: Icon(Icons.more_horiz),
                       ),

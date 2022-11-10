@@ -46,9 +46,9 @@ class ClubScreen extends StatelessWidget {
                     Row(
                       children:  [
                         Padding(
-                          padding: EdgeInsets.only(top: 20.0, left: 20.0),
+                          padding: const EdgeInsets.only(top: 20.0, left: 20.0),
                           child: CircleAvatar(
-                            backgroundImage: NetworkImage(
+                            backgroundImage: const NetworkImage(
                                 'https://s3-alpha-sig.figma.com/img/738e/6e77/a92971e6075b85d18be0de93205d90cb?Expires=1668384000&Signature=eouSFgda1zED50ptAd7f8Qql1Elx4kZYVBeJhtP8JoYEdAkYV7zJ9IdjpKZLdqNUs7kvjvxFc8rnQCMkno4s0gVatpRK8LGxe~gvH8-CP9XPFHUHGOo1ZKUJ3px6MJ3snfLvLyG9EpKcjRiDXVgHrtnermqhgmqxhffCoj23Y69~vbm8vY8f2mrvrs7t-~tSL8K-sq~QGcSfJDr2UiUHNcLnh-K3V3BS5wb-LzZ5KdB8E6liAgbao-f85C3Nh5DRflFVb-DuZMSqnIhvzSY6DycapVi3jRI9QcD98Y22ysNxmedXRqE2zUjFejE4tfzggiKR3TSaQBeMLFVwG5LPJw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'),
                           child: RawMaterialButton(onPressed: () {
                             Navigator.push(
@@ -58,7 +58,7 @@ class ClubScreen extends StatelessWidget {
                           }),                       
                           ),
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 10, top: 20.0),
                           child: Text(
                             'Cameron \nWilliamson',
@@ -69,10 +69,10 @@ class ClubScreen extends StatelessWidget {
                                 color: Color(0xFF000000)),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 135,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(top: 20.0),
                           child: Icon(Icons.more_horiz),
                         ),
@@ -179,7 +179,7 @@ class ClubScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 35.0),
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Marketplace',
                       style: TextStyle(
                           fontSize: 23,
@@ -188,7 +188,7 @@ class ClubScreen extends StatelessWidget {
                           color: Color(0xFF000000)),
                     )),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               TextButton(
@@ -198,7 +198,7 @@ class ClubScreen extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const ClubScreenMyProposals()));
                   },
-                  child: Text(
+                  child: const Text(
                     'My proposals',
                     style: TextStyle(
                         fontSize: 23,
@@ -572,7 +572,7 @@ class ClubScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 96,
             ),
             Container(

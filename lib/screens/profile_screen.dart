@@ -1,4 +1,5 @@
 import 'package:contenter_app/screens/club_screen.dart';
+import 'package:contenter_app/screens/logout_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -72,12 +73,12 @@ class ProfileScreen extends StatelessWidget {
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                             backgroundColor:
-                                const Color.fromRGBO(60, 4, 228, 1),
+                                const Color.fromRGBO(251, 251, 251, 1),
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(8)))),
                       onPressed: () {},
-                      child: const Text('Change photo'),
+                      child: const Text('Change photo', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'OpenSans', color: Color.fromRGBO(60, 4, 228, 1)),),
                     ),
                   ),
                   const Padding(
@@ -101,12 +102,12 @@ class ProfileScreen extends StatelessWidget {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                             backgroundColor:
-                                const Color.fromRGBO(60, 4, 228, 1),
+                                const Color.fromRGBO(251, 251, 251, 1),
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(8)))),
                       onPressed: () {},
-                      child: const Icon(FontAwesomeIcons.trashCan)),
+                      child: const Icon(FontAwesomeIcons.trashCan, color: Color.fromRGBO(253, 9, 53, 1),)),
                 ),
               ),
             ],
@@ -115,11 +116,11 @@ class ProfileScreen extends StatelessWidget {
             height: 16,
           ),
           Row(
-            children: [
-              const SizedBox(
+            children: const [
+              SizedBox(
                 width: 20,
               ),
-              const Text('Name *', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'Manrope', color: Color(0xFF000000)),),
+              Text('Name *', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'Manrope', color: Color(0xFF000000)),),
             ],
           ),
           const SizedBox(
@@ -139,32 +140,37 @@ class ProfileScreen extends StatelessWidget {
                   label: Text('Alex Bronx')),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 46,
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               SizedBox(
                 width: 182.5,
                 height: 52,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                       Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LogOut()));
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: const Color.fromRGBO(251, 251, 251, 1),
                         shape: const RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(8)))),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         'Logout',
-                        style: TextStyle(color: Color.fromRGBO(253, 9, 53, 1)),
+                        style: TextStyle(color: Color.fromRGBO(253, 9, 53, 1), fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'OpenSans'),
                       ),
                     )),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               SizedBox(
@@ -177,17 +183,17 @@ class ProfileScreen extends StatelessWidget {
                         shape: const RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(8)))),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         'Update',
                         style:
-                            TextStyle(color: Color.fromRGBO(239, 239, 239, 1)),
+                            TextStyle(color: Color.fromRGBO(239, 239, 239, 1), fontSize: 14, fontWeight: FontWeight.w600, fontFamily: 'OpenSans'),
                       ),
                     )),
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 72,
           ),
           Padding(
@@ -195,18 +201,18 @@ class ProfileScreen extends StatelessWidget {
             child: Container(
               width: 335,
               height: 332,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(240, 242, 244, 1),
               ),
               child: Column(
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       SizedBox(
                         width: 265,
                         height: 30,
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 20.0),
+                          padding: EdgeInsets.only(left: 20.0),
                           child: Text(
                             'Balance',
                             style: TextStyle(
@@ -223,10 +229,10 @@ class ProfileScreen extends StatelessWidget {
                       Icon(Icons.clear),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  Text(
+                  const Text(
                     '                          Oopsie :) \n This is a dummy balance; please refer \n   to your agreement to receive a cash \n                           voucher',
                     style: TextStyle(
                         fontSize: 16,
@@ -234,7 +240,7 @@ class ProfileScreen extends StatelessWidget {
                         color: Color(0xFF000000),
                         fontFamily: 'OpenSans-Medium'),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   SizedBox(
@@ -244,11 +250,11 @@ class ProfileScreen extends StatelessWidget {
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                             backgroundColor:
-                                const Color.fromRGBO(239, 239, 239, 1),
+                                const Color.fromRGBO(251, 251, 251, 1),
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(8)))),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             'Read the Agreement',
                             style: TextStyle(
@@ -257,7 +263,7 @@ class ProfileScreen extends StatelessWidget {
                           ),
                         )),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
@@ -271,7 +277,7 @@ class ProfileScreen extends StatelessWidget {
                             shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(8)))),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             'Ok',
                             style: TextStyle(
